@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// Provider ជា component ដែលយើងប្រើដើម្បីភ្ជាប់ store ទៅនឹង react app របស់យើង
 import { Provider } from 'react-redux';
+// store ដែលយើងបានបង្កើតនៅក្នុង file store.js ក្នុង tools folder
 import store from './tools/store';
 
 const LetReduxApp = () => (
