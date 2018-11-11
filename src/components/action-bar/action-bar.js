@@ -18,23 +18,23 @@ const ActionBar = props => {
           className="mr-3"
           src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/comment.png"
           height="25"
-          width="27"
+          width="25"
           alt="Heart"
         />
         <img
           className="mr-3"
           src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/share.png"
           height="25"
-          width="27"
+          width="23"
           alt="Heart"
         />
       </div>
       <div>
         <img
           className="mr-3"
-          src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/share.png"
+          src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/save.png"
           height="25"
-          width="27"
+          width="23"
           alt="Heart"
         />
       </div>
