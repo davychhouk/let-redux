@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Provider ជា component ដែលយើងប្រើដើម្បីភ្ជាប់ store ទៅនឹង react app របស់យើង
 import { Provider } from 'react-redux';
