@@ -1,15 +1,6 @@
 import React from 'react';
-import {
-  Card,
-  CardText,
-  CardBody,
-  CardLink,
-  CardTitle,
-  CardSubtitle,
-  CardImg
-} from 'reactstrap';
+import { Card, CardText, CardBody, CardLink, CardImg } from 'reactstrap';
 import PostHeader from '../header/post-header';
-import PostImage from '../image/postImage';
 
 const Post = props => {
   return (
@@ -20,7 +11,7 @@ const Post = props => {
           <CardImg
             top
             width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180"
+            src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/luka.png"
             alt="Card image cap"
           />
           <CardText>
