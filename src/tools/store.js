@@ -33,6 +33,8 @@ const composedEnhancers = compose(
 // បង្កើត store ដោយប្រើ createStore
 // ទទួល reducers, initialState និង enhancers ផ្សេងៗ
 const store = createStore(rootReducer, initialState, composedEnhancers);
+
+// log ដើម្បីដឹងថាមានបញ្ហាអីដែរឫអត់ពី store របស់យើង
 console.log('store', store.getState());
 
 // ដើម្បីងាយស្រួលប្រើ state និង dispatch an action
