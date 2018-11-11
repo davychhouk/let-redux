@@ -1,5 +1,7 @@
 .App {
   position: absolute;
-  top: 15%;
-  left: 30%;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
 }

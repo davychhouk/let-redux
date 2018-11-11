@@ -1,10 +1,43 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ActionBar = props => {
   return (
-    <div className="d-flex flex-row mt-3">
-      <div>Action</div>
+    <div className="d-flex flex-row justify-content-between mt-3 mb-3">
+      <div>
+        <img
+          className="mr-3 ml-3"
+          src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/heart.png"
+          height="25"
+          width="27"
+          alt="Heart"
+          onClick={() => {
+            console.log('Heart');
+          }}
+        />
+        <img
+          className="mr-3"
+          src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/comment.png"
+          height="25"
+          width="27"
+          alt="Heart"
+        />
+        <img
+          className="mr-3"
+          src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/share.png"
+          height="25"
+          width="27"
+          alt="Heart"
+        />
+      </div>
+      <div>
+        <img
+          className="mr-3"
+          src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/share.png"
+          height="25"
+          width="27"
+          alt="Heart"
+        />
+      </div>
     </div>
   );
 };
