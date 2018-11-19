@@ -5,7 +5,7 @@ import PostHeader from '../header/post-header';
 import ActionBar from '../action-bar/action-bar';
 import PostDetail from '../detail/post-detail';
 
-import { likePost } from '../../actions/post-action';
+import { likePostAction } from '../../actions/post-action';
 
 const Post = props => {
   const { postData, likePost } = props;
@@ -44,7 +44,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   likePost: () => {
-    dispatch(likePost());
+    dispatch(likePostAction());
   }
 });
 

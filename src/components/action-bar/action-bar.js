@@ -5,6 +5,7 @@ const FULL_HEART_URL =
 const HEART_URL =
   'https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/heart.png';
 const ActionBar = props => {
+  // Props ទទួលមកពី Post Component
   const { isLiked, likePost } = props;
   return (
     <div className="d-flex flex-row justify-content-between mt-3 mb-3">

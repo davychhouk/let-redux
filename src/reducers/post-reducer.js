@@ -1,3 +1,4 @@
+// យក Action Type ដែលបានសរសេរក្នុង post-action ជៀសវាងសរសេរខុស
 import { LIKE_POST } from '../actions/post-action';
 
 // Boilerplate របស់ reducer
