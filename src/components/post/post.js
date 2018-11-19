@@ -6,26 +6,41 @@ import ActionBar from '../action-bar/action-bar';
 import PostDetail from '../detail/post-detail';
 
 const Post = props => {
+  const { postData } = props;
+  const {
+    avatarUrl,
+    username,
+    imgUrl,
+    descriptions,
+    isLiked,
+    likesCount
+  } = postData;
   return (
     <div>
       <Card>
         <CardBody>
-          <PostHeader />
+          <PostHeader avatarUrl={avatarUrl} username={username} />
           <CardImg
             top
             width="100%"
-            src="https://static.giantbomb.com/uploads/square_small/3/33873/1700999-naruto.png"
+            src={imgUrl}
             alt="Luka Modric holds his uefa awards."
           />
-          <ActionBar />
-          <PostDetail />
+          <ActionBar isLiked={isLiked} />
+          <PostDetail
+            username={username}
+            description={descriptions}
+            likesCount={likesCount}
+          />
         </CardBody>
       </Card>
     </div>
   );
 };
 
-const mapStateToProps = state => ({});
+const mapStateToProps = state => ({
+  postData: state.post
+});
 
 const mapDispatchToProps = dispatch => ({});
 
