@@ -6,7 +6,6 @@ import ActionBar from '../action-bar/action-bar';
 import PostDetail from '../detail/post-detail';
 
 const Post = props => {
-  const { postData } = props;
   const {
     avatarUrl,
     username,
@@ -14,27 +13,25 @@ const Post = props => {
     descriptions,
     isLiked,
     likesCount
-  } = postData;
+  } = props.postData;
   return (
-    <div>
-      <Card>
-        <CardBody>
-          <PostHeader avatarUrl={avatarUrl} username={username} />
-          <CardImg
-            top
-            width="100%"
-            src={imgUrl}
-            alt="Luka Modric holds his uefa awards."
-          />
-          <ActionBar isLiked={isLiked} />
-          <PostDetail
-            username={username}
-            description={descriptions}
-            likesCount={likesCount}
-          />
-        </CardBody>
-      </Card>
-    </div>
+    <Card>
+      <CardBody>
+        <PostHeader avatarUrl={avatarUrl} username={username} />
+        <CardImg
+          top
+          width="100%"
+          src={imgUrl}
+          alt="Luka Modric holds his uefa awards."
+        />
+        <ActionBar isLiked={isLiked} />
+        <PostDetail
+          username={username}
+          description={descriptions}
+          likesCount={likesCount}
+        />
+      </CardBody>
+    </Card>
   );
 };
 
