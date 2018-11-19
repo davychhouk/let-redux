@@ -5,7 +5,7 @@ const FULL_HEART_URL =
 const HEART_URL =
   'https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/heart.png';
 const ActionBar = props => {
-  const { isLiked } = props;
+  const { isLiked, likePost } = props;
   return (
     <div className="d-flex flex-row justify-content-between mt-3 mb-3">
       <div>
@@ -16,7 +16,7 @@ const ActionBar = props => {
           width="27"
           alt="Heart"
           onClick={() => {
-            console.log('Heart');
+            likePost();
           }}
         />
         <img

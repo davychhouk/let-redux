@@ -5,7 +5,10 @@ import PostHeader from '../header/post-header';
 import ActionBar from '../action-bar/action-bar';
 import PostDetail from '../detail/post-detail';
 
+import { likePost } from '../../actions/post-action';
+
 const Post = props => {
+  const { postData, likePost } = props;
   const {
     avatarUrl,
     username,
@@ -13,7 +16,7 @@ const Post = props => {
     descriptions,
     isLiked,
     likesCount
-  } = props.postData;
+  } = postData;
   return (
     <Card>
       <CardBody>
@@ -24,7 +27,7 @@ const Post = props => {
           src={imgUrl}
           alt="Luka Modric holds his uefa awards."
         />
-        <ActionBar isLiked={isLiked} />
+        <ActionBar isLiked={isLiked} likePost={likePost} />
         <PostDetail
           username={username}
           description={descriptions}
@@ -39,7 +42,11 @@ const mapStateToProps = state => ({
   postData: state.post
 });
 
-const mapDispatchToProps = dispatch => ({});
+const mapDispatchToProps = dispatch => ({
+  likePost: () => {
+    dispatch(likePost());
+  }
+});
 
 export default connect(
   mapStateToProps,
