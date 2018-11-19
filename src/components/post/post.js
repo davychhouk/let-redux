@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Card, CardBody, CardImg } from 'reactstrap';
 import PostHeader from '../header/post-header';
 import ActionBar from '../action-bar/action-bar';
@@ -13,7 +14,7 @@ const Post = props => {
           <CardImg
             top
             width="100%"
-            src="https://raw.githubusercontent.com/davychhouk/let-redux/master/src/assets/images/luka.png"
+            src="https://static.giantbomb.com/uploads/square_small/3/33873/1700999-naruto.png"
             alt="Luka Modric holds his uefa awards."
           />
           <ActionBar />
@@ -24,4 +25,11 @@ const Post = props => {
   );
 };
 
-export default Post;
+const mapStateToProps = state => ({});
+
+const mapDispatchToProps = dispatch => ({});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Post);

@@ -1,11 +1,11 @@
 // ប្រើ combineReducers ដែលយើងបានបញ្ចូលពី redux
 // និងទាញ reducers មក combine ចូលក្នុង rootReducer
 import { combineReducers } from 'redux';
-import PlayReducer from './play-reducer';
+import PostReducer from './post-reducer';
 
 // បញ្ចូល reducers ទាំងអស់ក្នុង rootReducer
 const rootReducer = combineReducers({
-  play: PlayReducer
+  post: PostReducer
 });
 
 // បញ្ចេញឲ្យយកទៅប្រើកន្លែងផ្សេងបាន
