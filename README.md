@@ -1,7 +1,7 @@
 ## Let Redux
 React Tutorial by Davy Chhouk
 
-https://medium.com/@davy.chhouk/%E1%9E%8F%E1%9F%84%E1%9F%87-react-redux-9de4cc2a872
+តោះ Redux: https://medium.com/@davy.chhouk/%E1%9E%8F%E1%9F%84%E1%9F%87-react-redux-9de4cc2a872
 
 ### Screenshoots
 
